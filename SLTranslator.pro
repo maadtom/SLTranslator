@@ -24,8 +24,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
-        sltmenu.cpp
+        sltmenu.cpp \
+    streamhandler.cpp \
+    streamhandlertest.cpp
 
-HEADERS  += sltmenu.h
+HEADERS  += sltmenu.h \
+    streamhandler.h \
+    streamhandlertest.h
 
 FORMS    += sltmenu.ui
