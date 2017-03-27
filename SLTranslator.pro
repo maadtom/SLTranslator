@@ -9,7 +9,14 @@ QT       += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = SLTranslator
-TEMPLATE = app
+TEMPLATE = subdirs
+CONFIG+=ordered
+SUBDIRS =
+   src
+   app
+   tests
+app.depends = src
+tests.depends = src
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked as deprecated (the exact warnings
@@ -32,4 +39,4 @@ HEADERS  += sltmenu.h \
     streamhandler.h \
     streamhandlertest.h
 
-FORMS    += sltmenu.ui
+FORMS    += sltmenu.
