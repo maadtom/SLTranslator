@@ -3,8 +3,10 @@ TEMPLATE = app
 
 CONFIG   += console
 CONFIG   -= app_bundle
+CONFIG   += c++14
 CONFIG   -= qt
 
-SOURCES += main.cpp
+SOURCES += \
+    main.cpp
 
 LIBS += -lunittest++ -L../src -lSLTranslator
