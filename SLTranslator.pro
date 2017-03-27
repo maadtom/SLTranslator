@@ -14,7 +14,7 @@ CONFIG+=ordered
 SUBDIRS = \
     src \
     app \
-    tests
+    test
 
 app.depends = src
 tests.depends = src
