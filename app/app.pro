@@ -3,15 +3,15 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TEMPLATE = app
 
 SOURCES += main.cpp \
-    sltmenu.cpp
+    SLTmenu.cpp
 
 LIBS += -L../src -lSLTranslator
 
 FORMS += \
-    sltmenu.ui
+    SLTmenu.ui
 
 HEADERS += \
-    sltmenu.h
+    SLTmenu.h
 
 win32 {
 message("Using win32 configuration")

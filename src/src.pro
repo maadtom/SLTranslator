@@ -6,9 +6,9 @@ TEMPLATE = lib
 TARGET = SLTranslator
 
 SOURCES += \
-    imagehandler.cpp
+    ImageHandler.cpp
 HEADERS += \
-    imagehandler.h
+    ImageHandler.h
 
 win32 {
 message("Using win32 configuration")

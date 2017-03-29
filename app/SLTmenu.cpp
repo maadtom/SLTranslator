@@ -1,4 +1,4 @@
-#include "sltmenu.h"
+#include "SLTmenu.h"
 #include "ui_sltmenu.h"
 
 SLTMenu::SLTMenu(QWidget *parent) :

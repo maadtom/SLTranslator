@@ -7,6 +7,6 @@ CONFIG   += c++14
 CONFIG   -= qt
 
 SOURCES += \
-    main.cpp
+    TestImageHandler.cpp
 
 LIBS += -lunittest++ -L../src -lSLTranslator

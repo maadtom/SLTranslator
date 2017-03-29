@@ -1,4 +1,4 @@
-#include "sltmenu.h"
+#include "SLTmenu.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
