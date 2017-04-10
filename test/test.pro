@@ -7,12 +7,12 @@ CONFIG   -= app_bundle
 CONFIG   += testcase
 TEMPLATE = app
 SOURCES += main.cpp \
-    imagehandlertest.cpp \
-    streamcapturetest.cpp
+    ImageHandlerTest.cpp \
+    StreamCaptureTest.cpp
 
 HEADERS += \
-    imagehandlertest.h \
-    streamcapturetest.h
+    ImageHandlerTest.h \
+    StreamCaptureTest.h
 
 win32 {
 message("Using win32 configuration")

@@ -1,6 +1,6 @@
 #include <QtTest/QTest>
-#include <imagehandlertest.h>
-#include <streamcapturetest.h>
+#include <ImageHandlerTest.h>
+#include <StreamCaptureTest.h>
 
 
 int main()
