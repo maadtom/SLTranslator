@@ -27,6 +27,7 @@ public:
     int getCameraID();
 
     void changeCamera();
+    static VideoCapture captureStream();
 
 };
 

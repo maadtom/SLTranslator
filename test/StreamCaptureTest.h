@@ -3,7 +3,8 @@
 
 
 #include <QObject>
-#include <StreamCapture.h>
+#include "StreamCapture.h"
+#include <QTest>
 
 class StreamCaptureTest : public QObject
 {

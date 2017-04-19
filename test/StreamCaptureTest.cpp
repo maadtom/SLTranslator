@@ -25,7 +25,7 @@ FAIL: No frames available
 */
 void StreamCaptureTest::isStreamCaptured()
 {
-    VideoCapture testVC = StreamCapture.captureStream();
+    VideoCapture testVC = StreamCapture::captureStream();
 
     QVERIFY2(testVC.get(CV_CAP_PROP_FRAME_COUNT)>1,"No frames available!!");
 }

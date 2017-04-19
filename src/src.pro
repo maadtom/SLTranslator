@@ -7,10 +7,10 @@ TARGET = SLTranslator
 
 SOURCES += \
     ImageHandler.cpp \
-    streamcapture.cpp
+    StreamCapture.cpp
 HEADERS += \
     ImageHandler.h \
-    streamcapture.h
+    StreamCapture.h
 
 win32 {
 message("Using win32 configuration")

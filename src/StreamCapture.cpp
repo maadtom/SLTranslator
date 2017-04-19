@@ -1,4 +1,4 @@
-#include "streamcapture.h"
+#include "StreamCapture.h"
 
 StreamCapture::StreamCapture(VideoCapture capturedStream)
 {
@@ -22,10 +22,15 @@ Mat StreamCapture::getCapturedFrame()
 
 int StreamCapture::getCameraID()
 {
-
+    return 0;
 }
 
 void StreamCapture::changeCamera()
 {
 
+}
+
+VideoCapture StreamCapture::captureStream()
+{
+    return 0;
 }
