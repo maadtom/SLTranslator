@@ -1,0 +1,7 @@
+######################### SLTranslator #########################################
+This is my thesis project , which main goal is to compare argorithms of recognizing gestures.
+Created application will be based on OpenCV library and C++ language.
+
+Algorithms provided by OpenCV will help me to create translator of sign language.
+
+
