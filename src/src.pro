@@ -6,11 +6,9 @@ TEMPLATE = lib
 TARGET = SLTranslator
 
 SOURCES += \
-    ImageHandler.cpp \
-    StreamCapture.cpp
+    ImageHandler.cpp
 HEADERS += \
-    ImageHandler.h \
-    StreamCapture.h
+    ImageHandler.h
 
 win32 {
 message("Using win32 configuration")
