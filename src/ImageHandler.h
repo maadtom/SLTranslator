@@ -32,7 +32,7 @@ private:
 
 public:
     ImageHandler(cv::Mat capturedImg);
-    ~ImageHandler();
+
 };
 
 #endif // IMAGEHANDLER_H

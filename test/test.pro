@@ -1,16 +1,19 @@
 include(../defaults.pri)
 QT       += core testlib opengl
 QT       -= gui
-TARGET = SLTranslator
-CONFIG   += console
-CONFIG   -= app_bundle
+TARGET = test
 CONFIG   += testcase
 TEMPLATE = app
 SOURCES += main.cpp \
-    imagehandlertest.cpp
+    ImageHandlerTest.cpp \
+    StreamCaptureTest.cpp
 
 HEADERS += \
-    imagehandlertest.h
+    ImageHandlerTest.h \
+    StreamCaptureTest.h
+
+LIBS += -L../src -lSLTranslator
+
 
 win32 {
 message("Using win32 configuration")
@@ -55,7 +58,8 @@ LIBS     += \
 
 INCLUDEPATH += \
     $$OPENCV_PATH/modules/core/include/ \ #core module
-    $$OPENCV_PATH/modules/highgui/include/ #highgui modul
+    $$OPENCV_PATH/modules/highgui/include/ \ #highgui modul
+
 
 message("OpenCV path: $$OPENCV_PATH")
 message("Includes path: $$INCLUDEPATH")
