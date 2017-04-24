@@ -15,6 +15,8 @@ public:
     explicit ImageHandlerTest(QObject *parent = 0);
 
 private slots:
+    void isParametrizedConstructorWorking();
+    void isFrameFromStreamCaptured();
 
 };
 
