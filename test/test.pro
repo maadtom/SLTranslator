@@ -5,12 +5,10 @@ TARGET = test
 CONFIG   += testcase
 TEMPLATE = app
 SOURCES += main.cpp \
-    ImageHandlerTest.cpp \
-    StreamCaptureTest.cpp
+    ImageHandlerTest.cpp
 
 HEADERS += \
-    ImageHandlerTest.h \
-    StreamCaptureTest.h
+    ImageHandlerTest.h
 
 LIBS += -L../src -lSLTranslator
 

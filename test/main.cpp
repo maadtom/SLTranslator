@@ -1,15 +1,13 @@
 #include <QtTest/QTest>
 #include <ImageHandlerTest.h>
-#include <StreamCaptureTest.h>
+#include <QApplication>
 
-
-int main()
+int main(int argc, char *argv[])
 {
+    QApplication a(argc, argv);
+
     ImageHandlerTest imageHandlerTest;
-    StreamCaptureTest streamCaptureTest;
-
     QTest::qExec(&imageHandlerTest);
-    QTest::qExec(&streamCaptureTest);
 
-    return 0;
+    return a.exec();
 }

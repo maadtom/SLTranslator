@@ -19,6 +19,7 @@ struct ImgDimensions
     int imgPosY;
 };
 
+static const int DEFAULT_CAMERA = 0;
 
 class ImageHandler : public QOpenGLWidget, protected QOpenGLFunctions_2_0
 {
@@ -27,12 +28,29 @@ private:
 
     QImage renderedImg;
     QImage resizedImg;
-    cv::Mat orgImage;
+    Mat orgImage;
     ImgDimensions imgDimensions;
+    int cameraID;
 
 public:
-    ImageHandler(cv::Mat capturedImg);
 
+    ImageHandler(){}
+    ImageHandler(Mat capturedImg) : orgImage(capturedImg) , cameraID(DEFAULT_CAMERA){}
+    bool imageCapture(VideoCapture streamReciever);
+
+    /***********************GETTERS***********************/
+
+    QImage getRenderedImg() const;
+    QImage getResizedImg() const;
+    Mat getOrgImage() const;
+    int getCameraID() const;
+
+    /***********************SETTERS***********************/
+
+    void setRenderedImg(const QImage &value);
+    void setResizedImg(const QImage &value);
+    void setOrgImage(const Mat &value);
+    void setCameraID(int value);
 };
 
 #endif // IMAGEHANDLER_H
