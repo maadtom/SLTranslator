@@ -19,8 +19,9 @@ void ImageHandlerTest::isParametrizedConstructorWorking()
 
 void ImageHandlerTest::isFrameFromStreamCaptured()
 {
+    VideoCapture streamer(DEFAULT_CAMERA);
     ImageHandler *testImage = new ImageHandler();
-    testImage->imageCapture();
+    testImage->imageCapture(streamer);
 
     QVERIFY2(testImage->getOrgImage().cols > 0 && testImage->getOrgImage().rows > 0,
              "Captured matrix object is empty");

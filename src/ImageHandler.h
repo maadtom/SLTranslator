@@ -19,7 +19,7 @@ struct ImgDimensions
     int imgPosY;
 };
 
-static const int DEFAULT_CAMERA = 1;
+static const int DEFAULT_CAMERA = 0;
 
 class ImageHandler : public QOpenGLWidget, protected QOpenGLFunctions_2_0
 {
@@ -36,8 +36,7 @@ public:
 
     ImageHandler(){}
     ImageHandler(Mat capturedImg) : orgImage(capturedImg) , cameraID(DEFAULT_CAMERA){}
-    void imageCapture();
-    void imageRefresh();
+    bool imageCapture(VideoCapture streamReciever);
 
     /***********************GETTERS***********************/
 

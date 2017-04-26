@@ -46,7 +46,15 @@ void ImageHandler::setCameraID(int value)
 }
 
 
-void ImageHandler::imageCapture()
+bool ImageHandler::imageCapture(VideoCapture streamReciever)
 {
+    Mat frame;
 
+    if(!streamReciever.isOpened()) //check if stream recieving is started
+            return 0;
+
+     streamReciever >> frame; // get a new frame from camera
+     cvtColor(frame,this->orgImage, CV_BGR2GRAY); //change image to grayscale
+
+     return 1;
 }
